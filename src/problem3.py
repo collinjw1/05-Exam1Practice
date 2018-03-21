@@ -158,8 +158,8 @@ def problem3a(window, point, n):
     sum=0
     thic=1
     for k in range(n):
-        p1=rg.Point(point.x+(k*20),point.y+10)
-        p2=rg.Point(point.x+(k*20),point.y+50)
+        p1=rg.Point(point.x+(k*20),point.y+10*k)
+        p2=rg.Point(point.x+(k*20),point.y+50+10*k)
         line=rg.Line(p1,p2)
         line.attach_to(window)
         if thic <= 13:
